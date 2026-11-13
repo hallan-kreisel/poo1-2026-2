@@ -5,16 +5,6 @@ public abstract class BasePrestador extends BasePessoa {
     protected String telefone;
     protected String endereco;
 
-    public BasePrestador() {}
-
-    public BasePrestador(int codigo, String nome, String cpf, String email,
-            String telefone, String endereco) {
-        super(codigo, nome, cpf);
-        this.email = email;
-        this.telefone = telefone;
-        this.endereco = endereco;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -38,4 +28,15 @@ public abstract class BasePrestador extends BasePessoa {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
+
+    public BasePrestador(){}
+
+    public BasePrestador(int codigo, String nome, String cpf,
+        String email, String telefone, String endereco) {
+        super(codigo, nome, cpf);
+        this.email = email;
+        this.telefone = telefone;
+        this.endereco = endereco;
+    }
+
 }
